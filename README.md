@@ -7,7 +7,7 @@ More info about the event: https://huggingface.co/Agents-MCP-Hackathon
 
 - [Charles Cozad](https://github.com/ccozad)
 - Henry Fieger 
-- TBD
+- [Bruno Silva](https://github.com/brunosilvadev)
 
 # Brainstorming
 
