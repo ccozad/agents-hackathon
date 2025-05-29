@@ -1,2 +1,27 @@
-# agents-hackathon
-A gathering place for a Gradio Agents hackathon
+# Introduction
+This is a a gathering place for a Gradio Agents hackathon team.
+
+More info about the event: https://huggingface.co/Agents-MCP-Hackathon
+
+# Team members
+
+- [Charles Cozad](https://github.com/ccozad)
+- Henry Fieger 
+TBD
+
+# Brainstorming
+
+## Job agent
+Given a resume and job description: Identify matches, identify gaps, generate cover letter
+
+## Human Pose Widget
+Given pose information, show a 3D avatar with the pose. New Gradio widget
+
+## Next Move MCP
+Take in state for a simple game (Black Jack, Uno, Poker, a maze, etc.) and suggest next move. Have agent play a few rounds of the game. Maybe have agents play each other.
+
+# Resources
+
+## Human Pose
+ - [Sapiens Foundation Model](https://www.meta.com/emerging-tech/codec-avatars/sapiens/)
+ - [Ultralytics Pose Task](https://docs.ultralytics.com/tasks/pose/)
