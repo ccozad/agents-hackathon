@@ -25,3 +25,7 @@ Resources
 
 ## Next Move MCP
 Take in state for a simple game (Black Jack, Uno, Poker, a maze, etc.) and suggest next move. Have agent play a few rounds of the game. Maybe have agents play each other.
+
+# Inspiration
+
+ - The Stable Diffusion Web UI, built entirely with Gradio https://github.com/AUTOMATIC1111/stable-diffusion-webui
