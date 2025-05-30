@@ -14,7 +14,7 @@ More info about the event: https://huggingface.co/Agents-MCP-Hackathon
 ## Job agent
 Given a resume and job description: Identify matches, identify gaps, generate cover letter
 
- -[Code](/job-agent/)
+ - [Code](/job-agent/)
 
 ## Human Pose Widget
 Given pose information, show a 3D avatar with the pose. New Gradio widget
