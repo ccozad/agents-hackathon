@@ -19,11 +19,9 @@ Given a resume and job description: Identify matches, identify gaps, generate co
 ## Human Pose Widget
 Given pose information, show a 3D avatar with the pose. New Gradio widget
 
-## Next Move MCP
-Take in state for a simple game (Black Jack, Uno, Poker, a maze, etc.) and suggest next move. Have agent play a few rounds of the game. Maybe have agents play each other.
-
-# Resources
-
-## Human Pose
+Resources
  - [Sapiens Foundation Model](https://www.meta.com/emerging-tech/codec-avatars/sapiens/)
  - [Ultralytics Pose Task](https://docs.ultralytics.com/tasks/pose/)
+
+## Next Move MCP
+Take in state for a simple game (Black Jack, Uno, Poker, a maze, etc.) and suggest next move. Have agent play a few rounds of the game. Maybe have agents play each other.
