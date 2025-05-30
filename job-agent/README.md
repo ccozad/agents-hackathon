@@ -6,6 +6,8 @@ Given a resume and job description:
  - Identify gaps
  - Generate cover letter
 
+![Job Agent](/images/job-agent.png?raw=true "Job Agent")
+
 # Dependencies
 
 You will need all of the following dependencies to run this example:
