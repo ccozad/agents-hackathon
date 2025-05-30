@@ -33,9 +33,11 @@ You will need all of the following dependencies to run this example:
 
 # Running the code
 
+```
 python app.py
 * Running on local URL:  http://127.0.0.1:7860
 * To create a public link, set `share=True` in `launch()`.
 
 🔨 MCP server (using SSE) running at: http://127.0.0.1:7860/gradio_api/mcp/sse
 Keyboard interruption in main thread... closing server.
+```
