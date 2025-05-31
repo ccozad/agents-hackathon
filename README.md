@@ -5,8 +5,7 @@ More info about the event: https://huggingface.co/Agents-MCP-Hackathon
 
 # Team members
 
-- [Charles Cozad](https://github.com/ccozad)
-- Henry Fieger 
+- [Charles Cozad](https://github.com/ccozad) 
 - [Bruno Silva](https://github.com/brunosilvadev)
 
 # Brainstorming
@@ -22,6 +21,9 @@ Given pose information, show a 3D avatar with the pose. New Gradio widget
 Resources
  - [Sapiens Foundation Model](https://www.meta.com/emerging-tech/codec-avatars/sapiens/)
  - [Ultralytics Pose Task](https://docs.ultralytics.com/tasks/pose/)
+   - [Yolo v11 Samples](/yolo/)
+     - [Detect GPU](/yolo/check_env.py)
+     - [Pose Data](/yolo/pose_data.py)
 
 ## Next Move MCP
 Take in state for a simple game (Black Jack, Uno, Poker, a maze, etc.) and suggest next move. Have agent play a few rounds of the game. Maybe have agents play each other.
