@@ -18,12 +18,15 @@ Given a resume and job description: Identify matches, identify gaps, generate co
 ## Human Pose Widget
 Given pose information, show a 3D avatar with the pose. New Gradio widget
 
+![Annotated Pose](/images/annotated_pose.jpg?raw=true "Annotated Pose")
+
 Resources
  - [Sapiens Foundation Model](https://www.meta.com/emerging-tech/codec-avatars/sapiens/)
  - [Ultralytics Pose Task](https://docs.ultralytics.com/tasks/pose/)
    - [Yolo v11 Samples](/yolo/)
      - [Detect GPU](/yolo/check_env.py)
      - [Pose Data](/yolo/pose_data.py)
+     - [Annotate Pose](/yolo/annotate_pose.py)
 
 ## Next Move MCP
 Take in state for a simple game (Black Jack, Uno, Poker, a maze, etc.) and suggest next move. Have agent play a few rounds of the game. Maybe have agents play each other.

@@ -1,5 +1,7 @@
 # Introduction
 
+![Annotated Pose](/images/annotated_pose.jpg?raw=true "Annotated Pose")
+
 This area of the project is a lab to try out various Ultralytics Yolo v11 workflows.
 
 In the default YOLO11 pose model, there are 17 keypoints, each representing a different part of the human body. Here is the mapping of each index to its respective body joint:
@@ -162,4 +164,17 @@ Left Knee: [0.0, 0.0]
 Right Knee: [0.0, 0.0]
 Left Ankle: [0.0, 0.0]
 Right Ankle: [0.0, 0.0]
+```
+
+## Annotate pose example
+
+```
+python annotate_pose.py
+
+image 1/1 D:\Github\agents-hackathon\yolo\image.jpg: 448x640 4 persons, 102.5ms
+Speed: 2.4ms preprocess, 102.5ms inference, 101.1ms postprocess per image at shape (1, 3, 448, 640)
+Processing person 1
+Processing person 2
+Processing person 3
+Processing person 4
 ```
