@@ -1,8 +1,8 @@
 # Introduction
 
-![Annotated Pose 1](/images/annotated_image0.jpg?raw=true "Annotated Pose 1" | width=400)
-![Annotated Pose 2](/images/annotated_image1.jpg?raw=true "Annotated Pose 2" | width=400)
-![Annotated Pose 3](/images/annotated_image2.jpg?raw=true "Annotated Pose 2" | width=400)
+<img src="/images/annotated_image0.jpg" width="400">
+<img src="/images/annotated_image1.jpg" width="400">
+<img src="/images/annotated_image2.jpg" width="400">
 
 This area of the project is a lab to try out various Ultralytics Yolo v11 workflows.
 
