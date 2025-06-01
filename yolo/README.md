@@ -1,9 +1,5 @@
 # Introduction
 
-<img src="/images/annotated_image0.jpg" width="400">
-<img src="/images/annotated_image1.jpg" width="400">
-<img src="/images/annotated_image2.jpg" width="400">
-
 This area of the project is a lab to try out various Ultralytics Yolo v11 workflows.
 
 In the default YOLO11 pose model, there are 17 keypoints, each representing a different part of the human body. Here is the mapping of each index to its respective body joint:
@@ -35,6 +31,12 @@ In the default YOLO11 pose model, there are 17 keypoints, each representing a di
  - Right Torso: right hip (13) -> right shoulder (7)
  - Left arm: left wrist (10) -> left elbow (8) -> left shoulder (6)
  - Right arm: right wrist (11) -> right elbow (9) -> right shoulder (7)
+
+# Examples
+
+<img src="/images/annotated_image0.jpg" width="400">
+<img src="/images/annotated_image1.jpg" width="400">
+<img src="/images/annotated_image2.jpg" width="400">
 
 # Dependencies
 
