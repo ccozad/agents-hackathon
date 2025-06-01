@@ -22,6 +22,8 @@ RIGHT_KNEE = 14
 LEFT_ANKLE = 15
 RIGHT_ANKLE = 16
 
+min_area = 15000
+
 def annotate_pose(image, keypoints, color):
     """
     Add key points to the image for visualization.
@@ -34,6 +36,20 @@ def annotate_pose(image, keypoints, color):
         x, y = keypoints[i]
         if i> 4 and x > 0 and y > 0:
             cv2.circle(image, (int(x), int(y)), radius, color, thickness)
+
+def annotate_bounding_box(image, box, color):
+    """
+    Draw bounding boxes around detected persons.
+    """
+    x1, y1, x2, y2 = map(int, box)
+    cv2.rectangle(image, (x1, y1), (x2, y2), color, 2)
+
+def area(box):
+    """
+    Calculate the area of a bounding box.
+    """
+    x1, y1, x2, y2 = box
+    return (x2 - x1) * (y2 - y1)
 
 colors = [
     (255, 0, 0),   
@@ -63,9 +79,19 @@ for result in results:
     xy = result.keypoints.xy  # x and y coordinates
     xyn = result.keypoints.xyn  # normalized
     kpts = result.keypoints.data  # x, y, visibility (if available)
+    boxes = result.boxes.xyxy  # bounding boxes 
+    
     for i, person in enumerate(xy):
         print(f"Processing person {i + 1}")
-        annotate_pose(image, person, colors[i % len(colors)])
+        box = boxes[i] if i < len(boxes) else [0, 0, image.shape[1], image.shape[0]]
+        area_box = area(box)
+        if area_box < min_area:
+            print(f"Skipping person {i + 1} due to small bounding box area: {area_box}")
+            continue
+        else:
+            print(f"Annotating person {i + 1} with bounding box area: {area_box}")
+            annotate_pose(image, person, colors[i % len(colors)])
+            annotate_bounding_box(image, box, colors[i % len(colors)])
 
 # Save the annotated image
 cv2.imwrite("annotated_pose.jpg", image)
