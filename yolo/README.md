@@ -173,11 +173,19 @@ Right Ankle: [0.0, 0.0]
 
 ```
 python annotate_pose.py
+Downloading https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/2013_Nebelhorn_Trophy_Pilar_Maekawa_Moreno_Leonardo_Maekawa_Moreno_IMG_7885.JPG/800px-2013_Nebelhorn_Trophy_Pilar_Maekawa_Moreno_Leonardo_Maekawa_Moreno_IMG_7885.JPG to image0.jpg...
 
-image 1/1 D:\Github\agents-hackathon\yolo\image.jpg: 448x640 4 persons, 102.5ms
-Speed: 2.4ms preprocess, 102.5ms inference, 101.1ms postprocess per image at shape (1, 3, 448, 640)
-Processing person 1
-Processing person 2
-Processing person 3
-Processing person 4
+image 1/1 D:\Github\agents-hackathon\yolo\image0.jpg: 640x416 2 persons, 115.3ms
+Speed: 2.2ms preprocess, 115.3ms inference, 93.1ms postprocess per image at shape (1, 3, 640, 416)
+Annotated image saved as annotated_image0.jpg
+Downloading https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Sandboarding_in_Dubai.jpg/800px-Sandboarding_in_Dubai.jpg to image1.jpg...
+
+image 1/1 D:\Github\agents-hackathon\yolo\image1.jpg: 640x480 1 person, 116.7ms
+Speed: 3.1ms preprocess, 116.7ms inference, 2.8ms postprocess per image at shape (1, 3, 640, 480)
+Annotated image saved as annotated_image1.jpg
+Downloading https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Kovalev_v_Szilagyi_2013_Fencing_WCH_SMS-IN_t194135.jpg/1024px-Kovalev_v_Szilagyi_2013_Fencing_WCH_SMS-IN_t194135.jpg to image2.jpg...
+
+image 1/1 D:\Github\agents-hackathon\yolo\image2.jpg: 448x640 4 persons, 103.1ms
+Speed: 2.3ms preprocess, 103.1ms inference, 2.6ms postprocess per image at shape (1, 3, 448, 640)
+Annotated image saved as annotated_image2.jpg
 ```

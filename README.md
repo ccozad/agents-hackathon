@@ -18,7 +18,7 @@ Given a resume and job description: Identify matches, identify gaps, generate co
 ## Human Pose Widget
 Given pose information, show a 3D avatar with the pose. New Gradio widget
 
-![Annotated Pose](/images/annotated_pose.jpg?raw=true "Annotated Pose")
+<img src="/images/annotated_image0.jpg" width="400">
 
 Resources
  - [Sapiens Foundation Model](https://www.meta.com/emerging-tech/codec-avatars/sapiens/)
