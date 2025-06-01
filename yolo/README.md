@@ -1,6 +1,8 @@
 # Introduction
 
-![Annotated Pose](/images/annotated_pose.jpg?raw=true "Annotated Pose")
+![Annotated Pose 1](/images/annotated_image0.jpg?raw=true "Annotated Pose 1")
+![Annotated Pose 2](/images/annotated_image1.jpg?raw=true "Annotated Pose 2")
+![Annotated Pose 3](/images/annotated_image2.jpg?raw=true "Annotated Pose 2")
 
 This area of the project is a lab to try out various Ultralytics Yolo v11 workflows.
 
@@ -29,7 +31,8 @@ In the default YOLO11 pose model, there are 17 keypoints, each representing a di
  - Right leg: Right ankle (17) -> right knee (15) -> right hip (13)
  - Hips: left hip (12) -> right hip (13)
  - Shoulders: left shoulder (6) -> right shoulder (7)
- - Spine: Hips -> Shoulders (curved line?)
+ - Left Torso: left hip (12) -> left shoulder (6)
+ - Right Torso: right hip (13) -> right shoulder (7)
  - Left arm: left wrist (10) -> left elbow (8) -> left shoulder (6)
  - Right arm: right wrist (11) -> right elbow (9) -> right shoulder (7)
 
