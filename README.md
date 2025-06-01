@@ -16,7 +16,7 @@ Given a resume and job description: Identify matches, identify gaps, generate co
  - [Code](/job-agent/)
 
 ## Human Pose Widget
-Given pose information, show a 3D avatar with the pose. New Gradio widget
+Given 2D pose information, render the pose information on top of the original image.
 
 <img src="/images/annotated_image0.jpg" width="400">
 
