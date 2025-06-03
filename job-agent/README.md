@@ -16,7 +16,7 @@ You will need all of the following dependencies to run this example:
 
 ## Python Virtual Environment
 
- - Move to the gradio hello-world folder
+ - Move to the job-agent folder
    - `cd <job-agent>`
  - Create a virtual environment
    - On Mac: `python3 -m venv .venv`

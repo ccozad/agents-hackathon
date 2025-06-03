@@ -1,5 +1,7 @@
 from ultralytics import YOLO
+from PIL import Image
 import cv2
+import numpy as np
 
 # Constants for keypoint indices
 NOSE = 0
@@ -82,22 +84,61 @@ def area(box):
     x1, y1, x2, y2 = box
     return (x2 - x1) * (y2 - y1)
 
+def process_pose_data(image_data):
+    """
+    Process the image and return a dictionary with pose data.
+    """
+
+    pose_data = {
+        "metadata": {
+            "model": "yolo11n-pose",
+            "version": "1.0",
+            "description": "Pose estimation data from YOLOv11n model."
+        },
+        "keypoints": [],
+        "bounding_boxes": []
+    }
+
+    numpy_image = np.array(image_data)
+    image = cv2.cvtColor(numpy_image, cv2.COLOR_RGB2BGR)
+
+    # Load a model
+    model = YOLO("weights/yolo11n-pose.pt")  # load an official model 
+    # Predict with the model
+    results = model(image)  # predict on an image
+
+    # Access the results
+    for result in results:
+        xy = result.keypoints.xy  # x and y coordinates
+        boxes = result.boxes.xyxy  # bounding boxes 
+        
+        for i, person in enumerate(xy):
+            box = boxes[i] if i < len(boxes) else [0, 0, image.shape[1], image.shape[0]]
+            area_box = area(box)
+            if area_box < min_area:
+                continue
+            pose_data["keypoints"].append(person.tolist())
+            pose_data["bounding_boxes"].append(box.tolist())
+
+    return pose_data
+
+
 def process_image(image_data):
     """
     Process the image and return the annotated image.
     """
 
+    numpy_image = np.array(image_data)
+    image = cv2.cvtColor(numpy_image, cv2.COLOR_RGB2BGR)
+
     # Load a model
     model = YOLO("weights/yolo11n-pose.pt")  # load an official model 
     # Predict with the model
-    results = model(image_data)  # predict on an image
-    image = cv2.imread(image_data, cv2.IMREAD_COLOR)
+    results = model(image)  # predict on an image
 
     # Access the results
     for result in results:
         xy = result.keypoints.xy  # x and y coordinates
-        xyn = result.keypoints.xyn  # normalized
-        kpts = result.keypoints.data  # x, y, visibility (if available)
         boxes = result.boxes.xyxy  # bounding boxes 
         
         for i, person in enumerate(xy):
@@ -108,5 +149,5 @@ def process_image(image_data):
             annotate_pose(image, person, colors[i % len(colors)])
             annotate_bounding_box(image, box, colors[i % len(colors)])
 
-    return image
+    return Image.fromarray(image)
 
