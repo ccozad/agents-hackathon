@@ -1,0 +1,4 @@
+gradio[mcp]
+ultralytics
+opencv-python
+numpy
